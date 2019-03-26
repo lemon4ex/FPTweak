@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		C96E1346224A92E400E78CFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96E1345224A92E400E78CFA /* Foundation.framework */; };
 		C96E1354224A92E400E78CFA /* FPTweak.h in Headers */ = {isa = PBXBuildFile; fileRef = C96E1353224A92E400E78CFA /* FPTweak.h */; };
-		C96E1356224A92E400E78CFA /* FPTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = C96E1355224A92E400E78CFA /* FPTweak.m */; };
+		C96E1356224A92E400E78CFA /* FPTweak.mm in Sources */ = {isa = PBXBuildFile; fileRef = C96E1355224A92E400E78CFA /* FPTweak.mm */; };
+		C96E1361224A931200E78CFA /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C96E1360224A931200E78CFA /* libsubstrate.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,9 @@
 		C96E1351224A92E400E78CFA /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		C96E1352224A92E400E78CFA /* FPTweak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPTweak-Prefix.pch"; sourceTree = "<group>"; };
 		C96E1353224A92E400E78CFA /* FPTweak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPTweak.h; sourceTree = "<group>"; };
-		C96E1355224A92E400E78CFA /* FPTweak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPTweak.m; sourceTree = "<group>"; };
+		C96E1355224A92E400E78CFA /* FPTweak.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FPTweak.mm; sourceTree = "<group>"; };
 		C96E135A224A92E400E78CFA /* FPTweak.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = FPTweak.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/FPTweak.plist; sourceTree = "<group>"; };
+		C96E1360224A931200E78CFA /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../opt/EasyDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96E1361224A931200E78CFA /* libsubstrate.dylib in Frameworks */,
 				C96E1346224A92E400E78CFA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +63,7 @@
 		C96E1344224A92E400E78CFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C96E1360224A931200E78CFA /* libsubstrate.dylib */,
 				C96E1345224A92E400E78CFA /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -69,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				C96E1353224A92E400E78CFA /* FPTweak.h */,
-				C96E1355224A92E400E78CFA /* FPTweak.m */,
+				C96E1355224A92E400E78CFA /* FPTweak.mm */,
 				C96E1348224A92E400E78CFA /* Package */,
 				C96E1350224A92E400E78CFA /* Supporting Files */,
 			);
@@ -171,6 +175,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "猿码工作室（https://ymlab.net）";
 				TargetAttributes = {
 					C96E1341224A92E400E78CFA = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -228,7 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C96E1356224A92E400E78CFA /* FPTweak.m in Sources */,
+				C96E1356224A92E400E78CFA /* FPTweak.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,10 @@
 					"$(EasyDevTheosPath)/vendor/include",
 				);
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/EasyDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -366,6 +375,10 @@
 					"$(EasyDevTheosPath)/vendor/include",
 				);
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/EasyDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;

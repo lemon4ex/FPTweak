@@ -1,7 +1,7 @@
 Package: net.ymlab.dev.FPTweak
 Name: FPTweak
-Version: 0.1-1
-Description: 
+Version: 1.0-3
+Description: 支付宝、微信开启指纹支付。
 Section: Tweaks
 Depends: firmware (>= 7.0), mobilesubstrate
 Conflicts: 
@@ -10,7 +10,7 @@ Priority: optional
 Architecture: iphoneos-arm
 Author: h4ck
 dev: 
-Homepage: 
+Homepage: https://ymlab.net
 Depiction: 
 Maintainer: 
 Icon: 
