@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C96E1346224A92E400E78CFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96E1345224A92E400E78CFA /* Foundation.framework */; };
+		C96E1354224A92E400E78CFA /* FPTweak.h in Headers */ = {isa = PBXBuildFile; fileRef = C96E1353224A92E400E78CFA /* FPTweak.h */; };
+		C96E1356224A92E400E78CFA /* FPTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = C96E1355224A92E400E78CFA /* FPTweak.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C96E1342224A92E400E78CFA /* FPTweak.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = FPTweak.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96E1345224A92E400E78CFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C96E134A224A92E400E78CFA /* preinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = preinst; path = Package/DEBIAN/preinst; sourceTree = "<group>"; };
+		C96E134B224A92E400E78CFA /* postinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
+		C96E134C224A92E400E78CFA /* postrm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postrm; path = Package/DEBIAN/postrm; sourceTree = "<group>"; };
+		C96E134D224A92E400E78CFA /* prerm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = prerm; path = Package/DEBIAN/prerm; sourceTree = "<group>"; };
+		C96E134E224A92E400E78CFA /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		C96E134F224A92E400E78CFA /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		C96E1351224A92E400E78CFA /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		C96E1352224A92E400E78CFA /* FPTweak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPTweak-Prefix.pch"; sourceTree = "<group>"; };
+		C96E1353224A92E400E78CFA /* FPTweak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPTweak.h; sourceTree = "<group>"; };
+		C96E1355224A92E400E78CFA /* FPTweak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPTweak.m; sourceTree = "<group>"; };
+		C96E135A224A92E400E78CFA /* FPTweak.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = FPTweak.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/FPTweak.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C96E133E224A92E400E78CFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96E1346224A92E400E78CFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C96E1337224A92E400E78CFA = {
+			isa = PBXGroup;
+			children = (
+				C96E1347224A92E400E78CFA /* FPTweak */,
+				C96E1344224A92E400E78CFA /* Frameworks */,
+				C96E1343224A92E400E78CFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C96E1343224A92E400E78CFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C96E1342224A92E400E78CFA /* FPTweak.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C96E1344224A92E400E78CFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C96E1345224A92E400E78CFA /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C96E1347224A92E400E78CFA /* FPTweak */ = {
+			isa = PBXGroup;
+			children = (
+				C96E1353224A92E400E78CFA /* FPTweak.h */,
+				C96E1355224A92E400E78CFA /* FPTweak.m */,
+				C96E1348224A92E400E78CFA /* Package */,
+				C96E1350224A92E400E78CFA /* Supporting Files */,
+			);
+			path = FPTweak;
+			sourceTree = "<group>";
+		};
+		C96E1348224A92E400E78CFA /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				C96E1349224A92E400E78CFA /* DEBIAN */,
+				C96E1357224A92E400E78CFA /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		C96E1349224A92E400E78CFA /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				C96E134A224A92E400E78CFA /* preinst */,
+				C96E134B224A92E400E78CFA /* postinst */,
+				C96E134C224A92E400E78CFA /* postrm */,
+				C96E134D224A92E400E78CFA /* prerm */,
+				C96E134E224A92E400E78CFA /* control */,
+				C96E134F224A92E400E78CFA /* control.txt */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		C96E1350224A92E400E78CFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C96E1351224A92E400E78CFA /* PackageVersion.plist */,
+				C96E1352224A92E400E78CFA /* FPTweak-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C96E1357224A92E400E78CFA /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C96E1358224A92E400E78CFA /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		C96E1358224A92E400E78CFA /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				C96E1359224A92E400E78CFA /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		C96E1359224A92E400E78CFA /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				C96E135A224A92E400E78CFA /* FPTweak.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C96E133F224A92E400E78CFA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96E1354224A92E400E78CFA /* FPTweak.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C96E1341224A92E400E78CFA /* FPTweak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96E135D224A92E400E78CFA /* Build configuration list for PBXNativeTarget "FPTweak" */;
+			buildPhases = (
+				C96E133C224A92E400E78CFA /* ShellScript */,
+				C96E133D224A92E400E78CFA /* Sources */,
+				C96E133E224A92E400E78CFA /* Frameworks */,
+				C96E133F224A92E400E78CFA /* Headers */,
+				C96E1340224A92E400E78CFA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FPTweak;
+			productName = FPTweak;
+			productReference = C96E1342224A92E400E78CFA /* FPTweak.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C96E1338224A92E400E78CFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					C96E1341224A92E400E78CFA = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C96E133B224A92E400E78CFA /* Build configuration list for PBXProject "FPTweak" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C96E1337224A92E400E78CFA;
+			productRefGroup = C96E1343224A92E400E78CFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C96E1341224A92E400E78CFA /* FPTweak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C96E133C224A92E400E78CFA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# rm -rf \"${PROJECT_DIR}/${TARGET_NAME}/Package/usr/bin/*\"\n# cp -rf \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/PalmRiskSvr\" \"${PROJECT_DIR}/${TARGET_NAME}/Package/usr/bin/\"\n\n# 自动更新deb包版本号\necho $CONFIGURATION\nif [ \"Release\" == \"${CONFIGURATION}\" ]\nthen\npackInfoPlist=\"${PROJECT_DIR}/${TARGET_NAME}/PackageVersion.plist\"\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print PackageRevision\" \"${packInfoPlist}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :PackageRevision $buildNumber\" \"${packInfoPlist}\"\necho \"build number increase\"\nfi";
+		};
+		C96E1340224A92E400E78CFA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/EasyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C96E133D224A92E400E78CFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96E1356224A92E400E78CFA /* FPTweak.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C96E135B224A92E400E78CFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EasyDevPath = /opt/EasyDev;
+				EasyDevTheosPath = /opt/theos;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/frameworks",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/include",
+					"$(EasyDevTheosPath)/vendor/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C96E135C224A92E400E78CFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EasyDevPath = /opt/EasyDev;
+				EasyDevTheosPath = /opt/theos;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/frameworks",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/include",
+					"$(EasyDevTheosPath)/vendor/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		C96E135E224A92E400E78CFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EasyDevBuildPackageOnAnyBuild = NO;
+				EasyDevClearUiCacheOnInstall = NO;
+				EasyDevCopyOnBuild = NO;
+				EasyDevDeviceIP = "";
+				EasyDevDevicePort = "";
+				EasyDevInstallOnAnyBuild = NO;
+				EasyDevInstallOnProfiling = NO;
+				EasyDevUsePackageVersionPList = YES;
+				EasyDevkillProcessOnInstall = SpringBoard;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FPTweak/FPTweak-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevTheosPath)/vendor/include",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C96E135F224A92E400E78CFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EasyDevBuildPackageOnAnyBuild = NO;
+				EasyDevClearUiCacheOnInstall = NO;
+				EasyDevCopyOnBuild = NO;
+				EasyDevDeviceIP = "";
+				EasyDevDevicePort = "";
+				EasyDevInstallOnAnyBuild = NO;
+				EasyDevInstallOnProfiling = NO;
+				EasyDevUsePackageVersionPList = YES;
+				EasyDevkillProcessOnInstall = SpringBoard;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FPTweak/FPTweak-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevTheosPath)/vendor/include",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C96E133B224A92E400E78CFA /* Build configuration list for PBXProject "FPTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96E135B224A92E400E78CFA /* Release */,
+				C96E135C224A92E400E78CFA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C96E135D224A92E400E78CFA /* Build configuration list for PBXNativeTarget "FPTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96E135E224A92E400E78CFA /* Release */,
+				C96E135F224A92E400E78CFA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C96E1338224A92E400E78CFA /* Project object */;
+}

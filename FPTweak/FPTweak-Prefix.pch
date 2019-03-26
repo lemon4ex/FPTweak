@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'FPTweak' target in the 'FPTweak' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
